@@ -4,13 +4,26 @@
     box-sizing: border-box;
 }
 
-:root{
-    --padding: 20px;
-    --blur: 0px;
-    --base: rgb(255,133,0);
-    --width: 50%;
-    --border-radius: 15px;
+:root {
+    --rotate: 0deg;
+    --opacity: 1;
+    --shadow-color: #000000;
+    --shadow-blur: 0px;
+    --shadow-spread: 0px;
 }
+
+img {
+    width: var(--width);
+    height: auto;
+    padding: var(--padding);
+    filter: blur(var(--blur));
+    border-radius: var(--border-radius);
+    transform: rotate(var(--rotate));
+    opacity: var(--opacity);
+    box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
+    transition: all 0.3s ease;
+}
+
 
 body{
     display: flex;
