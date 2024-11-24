@@ -12,56 +12,43 @@
     <div class="container">
         <h1>Change the CSS of below image! With the help of the Sliders</h1>
         <span class="heading">JavaScript</span>
-
         <div class="css-controller">
-            <label for="base">Base Color</label>
-            <input type="color" name="base" id="base" value="#ff0000">
+    <label for="base">Base Color</label>
+    <input type="color" name="base" id="base" value="#ff0000">
 
-            <label for="width">Width</label>
-            <input
-             type="range"
-             id="width"
-             name="width"
-             min="0"
-             max="100"
-             value="30"   
-             data-sizing="%"   
-            >
+    <label for="width">Width</label>
+    <input type="range" id="width" name="width" min="0" max="100" value="50" data-sizing="%">
 
-            <label for="border">Border-Radius</label>
-            <input
-             type="range"
-             id="border-radius"
-             name="border-radius"
-             min="0"
-             max="100"
-             value="5"   
-             data-sizing="px"   
-            >
+    <label for="border">Border-Radius</label>
+    <input type="range" id="border-radius" name="border-radius" min="0" max="100" value="15" data-sizing="px">
 
-            
-            <label for="padding">Padding</label>
-            <input
-             type="range"
-             id="padding"
-             name="padding"
-             min="10"
-             max="200"
-             value="0"   
-             data-sizing="px"   
-            >
+    <label for="padding">Padding</label>
+    <input type="range" id="padding" name="padding" min="0" max="100" value="20" data-sizing="px">
 
-            <label for="blur">Blur:</label>
-            <input
-             type="range"
-             id="blur"
-             name="blur"
-             min="0"
-             max="25"
-             value="0"   
-             data-sizing="px"   
-            >
-        </div>
+    <label for="blur">Blur</label>
+    <input type="range" id="blur" name="blur" min="0" max="25" value="0" data-sizing="px">
+
+    <label for="rotate">Rotate</label>
+    <input type="range" id="rotate" name="rotate" min="0" max="360" value="0" data-sizing="deg">
+
+    <label for="opacity">Opacity</label>
+    <input type="range" id="opacity" name="opacity" min="0" max="1" step="0.1" value="1">
+
+    <label for="shadow-color">Shadow Color</label>
+    <input type="color" id="shadow-color" name="shadow-color" value="#000000">
+
+    <label for="shadow-blur">Shadow Blur</label>
+    <input type="range" id="shadow-blur" name="shadow-blur" min="0" max="50" value="0" data-sizing="px">
+
+    <label for="shadow-spread">Shadow Spread</label>
+    <input type="range" id="shadow-spread" name="shadow-spread" min="0" max="50" value="0" data-sizing="px">
+
+    <button id="reset">Reset</button>
+</div>
+
+
+       
+         
 
         <img src="https://cdn.pixabay.com/photo/2023/08/26/22/44/brewers-blackbird-8215850_640.jpg" alt="Image from Pixabay">
 
